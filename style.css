@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    width: 30%;
+    margin: 30px auto;
+
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0;
+    
+}
+
+.main {
+    margin: auto;
+    width: 100%;
+}
+
+.square {
+    position: relative;
+    width: calc(100%/3);
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+
+}
+
+.choosen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.choosen.choosenX {
+    background-image: url(assets/x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.choosen.choosenO {
+    background-image: url(assets/o.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
